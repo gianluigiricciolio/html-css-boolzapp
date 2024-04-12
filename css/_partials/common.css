@@ -3,6 +3,7 @@ body{
     height:100vh;
     width:100vw;
     background-color: bisque;
+    font-family: Lato;
 }
 
 header{
@@ -22,6 +23,8 @@ ul{
 }
 
 .sidebar{
+    display: flex;
+    flex-direction: column;
     background-color: chocolate;
     display: none;
     height:100%;
@@ -31,6 +34,9 @@ ul{
 
 .chats{
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
 }
 
 .content{
@@ -53,9 +59,7 @@ ul{
     .sidebar{
         display: block;
         width:10%;
-    }
-
-    .content{
+        max-width: 75px;
     }
 }
 
@@ -70,6 +74,7 @@ ul{
     .sidebar{
         display: block;
         width:30%;
+        max-width: 100%;
         
     }
 
