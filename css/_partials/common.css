@@ -7,12 +7,13 @@ body{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
+    max-height:100%;
 }
 
 header{
-    background-color: lightblue;
-    height:50px;
+    background-color: rgb(219, 219, 219);
+    height:var(--header-height);
 }
 
 ul{
@@ -30,7 +31,7 @@ ul{
     border-radius: 50%;
 }
 
-.container{
+.main-container{
     background-color: brown;
     display: flex;
     height:100%;
@@ -38,8 +39,6 @@ ul{
 }
 
 .sidebar{
-    display: flex;
-    flex-direction: column;
     background-color: chocolate;
     display: none;
     height:100%;
@@ -85,7 +84,7 @@ ul{
 
 @media screen and (min-width:992px) {
 
-    .container{
+    .main-container{
         height:90%;
         width:80%;
         margin:auto;
