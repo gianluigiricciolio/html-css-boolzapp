@@ -6,6 +6,10 @@ body{
     font-family: Lato;
 }
 
+img{
+    width: 100%;
+}
+
 header{
     background-color: lightblue;
     height:50px;
@@ -13,6 +17,17 @@ header{
 
 ul{
     list-style: none;
+}
+
+.chats li{
+    max-height: 95px;
+    display: flex;
+    padding:10px;
+    border-top:1px solid gray;
+}
+
+.chats img{
+    border-radius: 50%;
 }
 
 .container{
@@ -36,7 +51,6 @@ ul{
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    height: 80%;
 }
 
 .content{
@@ -47,13 +61,17 @@ ul{
 
 .notifications{
     background-color: brown;
+    height:60px;
     display:none;
 }
 
 .search{
     background-color: rgb(134, 134, 134);
+    height:45px;
     display: none;
 }
+
+/* RESPONSIVENESS */
 
 @media screen and (min-width:576px) {
     .sidebar{
@@ -61,13 +79,17 @@ ul{
         width:10%;
         max-width: 75px;
     }
+
+    .chats{
+        height: calc(100% - 50px);
+    }
 }
 
 @media screen and (min-width:992px) {
 
     .container{
-        height:95%;
-        width:90%;
+        height:90%;
+        width:80%;
         margin:auto;
     }
 
@@ -84,6 +106,10 @@ ul{
     
     .search{
         display: block;
+    }
+
+    .chats{
+        height: calc(100% - 155px);
     }
 
 }
