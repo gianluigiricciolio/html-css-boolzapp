@@ -6,7 +6,6 @@ body{
     font-family: Lato;
 }
 
-
 header{
     background-color: var(--primary-color);
     height:var(--header-height);
@@ -31,10 +30,13 @@ header{
 .chat-box{
     background-color: beige;
     flex-grow: 1;
+    padding: 25px 20px;
 }
 
 .text-input{
     height: var(--header-height);
+    background-color: var(--primary-color);
+    padding: 10px 18px;
 }
 
 
