@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/2e4bd0a474.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Boolzapp Web</title>
     <!-- APPROCCIO MOBILE FIRST -->
@@ -13,7 +16,7 @@
 <body>
     <!-- MAIN BOX -->
     <div class="main-container">
-        <div class="sidebar max-width-650p">
+        <div class="sidebar">
             <header>
                 header
             </header>
@@ -21,9 +24,10 @@
                 notifications
             </div>
             <div class="search">
-                <div class="search-box bg-white">
+                <div class="search-box bg-white d-flex align-center">
                     <div class="row align-center">
-                        <input class="reset" type="text">
+
+                        <input class="reset" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
             </div>
@@ -63,18 +67,44 @@
         </div>
         <div class="content d-flex column-direction">
             <header>
-                <div class="row py-10p">
-                    <img src="" alt="PFP">
+                <div class="row py-10p15p space-between">
+                    <div class="d-flex">
+                        <img src="./img/avatar_1.jpg" alt="PFP">
+                        <div class="contact-info d-flex column-direction justify-center gap-5p">
+                            <div class="contact-name">
+                                Michele
+                            </div>
+                            <div class="last-access">
+                                Ultimo accesso oggi alle 16:26
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="action-icons d-flex">
+                        <div class="row align-center justify-centers gap-15p">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            <i class="fa-solid fa-paperclip fa-xl"></i>
+                            <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+
+                        </div>
+                    </div>
                 </div>
             </header>
 
             <div class="chat-box">
                 ciaoooo
             </div>
-            <div class="input-box">
+            <div class="input-box d-flex">
+                <button class="emojis-btn reset">
+                    <i class="fa-regular fa-face-smile fa-xl"></i>
+                </button>
                 <div class="text-box bg-white d-flex align-center">
                     <input class="reset" type="text" placeholder="Scrivi un messaggio">
                 </div>
+                <button class="audio-btn reset">
+                    <i class="fa-solid fa-microphone fa-xl"></i>
+                </button>
             </div>
     
         </div>
