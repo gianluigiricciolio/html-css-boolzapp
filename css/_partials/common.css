@@ -32,6 +32,7 @@ header{
     background-color: beige;
     flex-grow: 1;
     padding: 25px 20px;
+    overflow: auto;
 }
 
 .input-box{
@@ -72,7 +73,8 @@ header{
     background-color: rgb(187, 246, 180);
     padding:10px;
     width:fit-content;
-    max-width:60%;
+    width:70%;
+    max-width:380px;
     margin-left: auto;
 }
 
@@ -81,7 +83,8 @@ header{
     background-color: rgb(255, 255, 255);
     padding:10px;
     width:fit-content;
-    max-width:60%;
+    width:70%;
+    max-width:380px;
     margin-right: auto;
 }
 
@@ -181,6 +184,10 @@ header{
         border-top:1px solid rgb(199, 199, 199);
     }
 
+    .chat-box{
+        padding: 35px 30px;
+    }
+
     ul{
         list-style: none;
     }
@@ -216,7 +223,7 @@ header{
 @media screen and (min-width:992px) {
 
     .main-container{
-        height:90%;
+        height:95%;
         width:80%;
         margin:auto;
     }
@@ -254,6 +261,10 @@ header{
 
     .chats{
         height: calc(100% - 195px);
+    }
+
+    .chat-box{
+        padding: 35px 60px;
     }
 
     .contact{
