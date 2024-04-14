@@ -9,6 +9,7 @@ body{
 header{
     background-color: var(--primary-color);
     height:var(--header-height);
+    padding-right:15px ;
 }
 
 .sidebar img, header img{
@@ -145,8 +146,12 @@ header{
         border-right:1px solid var(--secondary-color);
     }
 
-    .action-icons{
+    .left .action-icons{
         display: none;
+    }
+    
+    .action-icons{
+        display: flex;
     }
 
     .chats{
@@ -208,14 +213,14 @@ header{
         
     }
 
-    .action-icons{
-        display: flex;
-    }
-
     .notifications{
         display:block;
-        background-color: rgb(41, 184, 232);
+        background-color: rgb(128, 207, 233);
         height:var(--header-height);
+    }
+
+    .left .action-icons{
+        display: flex;
     }
     
     .search{
