@@ -67,6 +67,24 @@ header{
     color:var(--secondary-color)
 }
 
+.sender{
+    display: flex;
+    background-color: rgb(187, 246, 180);
+    padding:10px;
+    width:fit-content;
+    max-width:60%;
+    margin-left: auto;
+}
+
+.receiver{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    width:fit-content;
+    max-width:60%;
+    margin-right: auto;
+}
+
 /* LAYOUT */
 
 .row{
@@ -137,7 +155,7 @@ header{
     .sidebar{
         background-color: white;
         display: block;
-        width: 75px;
+        min-width: 75px;
         height:100%;
         overflow-y: hidden;
         border-right:1px solid var(--secondary-color);
