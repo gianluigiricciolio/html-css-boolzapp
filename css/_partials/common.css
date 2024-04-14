@@ -2,7 +2,13 @@ body{
     display:flex;
     height:100vh;
     width:100vw;
-    background-color: bisque;
+    background: linear-gradient(
+        to bottom,
+        rgb(57, 136, 112) 0%,
+        rgb(57, 136, 112) 20%,
+        rgb(200, 200, 200) 20%,
+        rgb(200, 200, 200) 100%
+      );
     font-family: Lato;
 }
 
@@ -260,7 +266,7 @@ header{
     }
 
     .chats{
-        height: calc(100% - 195px);
+        height: calc(100% - 210px);
     }
 
     .chat-box{
