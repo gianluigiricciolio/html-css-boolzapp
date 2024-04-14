@@ -17,13 +17,6 @@ header{
     max-height: 55px;
 }
 
-.circle{
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    background-color: white;
-}
-
 .main-container{
     display: flex;
     height:100%;
@@ -215,12 +208,19 @@ header{
 
     .notifications{
         display:block;
-        background-color: rgb(128, 207, 233);
+        background-color: var(--notification-color);
         height:var(--header-height);
     }
 
     .left .action-icons{
         display: flex;
+    }
+
+    .circle{
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+        background-color: white;
     }
     
     .search{
@@ -250,8 +250,9 @@ header{
         text-decoration: underline;
     }
 
-    .fa-bell{
+    .notification-color{
         text-align: center;
+        color: var(--notification-color);
     }
 }
 
