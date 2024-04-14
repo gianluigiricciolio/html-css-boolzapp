@@ -125,6 +125,10 @@ header{
     background-color: white;
 }
 
+.secondary-color{
+    color: var(--secondary-color);
+}
+
 
 /* RESPONSIVENESS */
 
@@ -227,7 +231,7 @@ header{
         display: block;
         padding:10px;
         background-color: var(--primary-color);
-        height:45px;
+        /* height:45px; */
     }
 
     .chats{
@@ -253,6 +257,11 @@ header{
     .notification-color{
         text-align: center;
         color: var(--notification-color);
+    }
+
+    .search .fa-magnifying-glass{
+        color: var(--secondary-color);
+        margin: 0px 25px 0px 15px;
     }
 }
 
