@@ -13,11 +13,10 @@ header{
 
 .chats img, header img{
     border-radius: 50%;
-    max-height: 65px;
+    max-height: 55px;
 }
 
 .main-container{
-    background-color: brown;
     display: flex;
     height:100%;
     width:100%;
@@ -52,17 +51,18 @@ header{
     padding:10px 20px;
 }
 
-.contact-info{
+.contact{
     margin-left:18px;
+    display: none;
 }
 
 .contact-name{
-    font-size: 1.2em;
+    font-size: 1.11em;
     color:black
 }
 
 .last-access{
-    font-size: 1em;
+    font-size: 0.9em;
     color:var(--secondary-color)
 }
 
@@ -130,7 +130,7 @@ header{
 @media screen and (min-width:576px) {
 
     .sidebar{
-        background-color: chocolate;
+        background-color: white;
         display: block;
         width:10%;
         max-width: 75px;
@@ -140,7 +140,7 @@ header{
     }
 
     .chats{
-        height: calc(100% - 50px);
+        height: calc(100% - 75px);
         overflow-y: auto;
     }
     
@@ -148,7 +148,7 @@ header{
         /* max-height: 95px; */
         display: flex;
         padding:10px;
-        border-top:1px solid gray;
+        border-top:1px solid rgb(199, 199, 199);
     }
 
     ul{
@@ -156,7 +156,7 @@ header{
     }
 
     .notifications{
-        background-color: brown;
+        background-color: rgb(41, 184, 232);
         height:60px;
         display:none;
     }
@@ -199,7 +199,8 @@ header{
     .sidebar{
         display: block;
         width:30%;
-        max-width: 370px;
+        min-width: 285px;
+        max-width: 350px;
         
     }
 
@@ -215,5 +216,14 @@ header{
         height: calc(100% - 155px);
     }
 
+    ;
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        /* margin-left:18px; */
+    }
 }
 
